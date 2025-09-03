@@ -14,7 +14,7 @@ body {
     
 }
  
-
+/* Reset */
 
 h1,
 h2,
@@ -33,7 +33,7 @@ img {
     display: block;
     max-width: 100%;
 }
-
+ol,
 ul {
     margin: 0;
     padding: 0;
@@ -41,6 +41,8 @@ ul {
 }
 a {
     text-decoration: none;
+    padding: 24px 0;
+    display: block;
 }
 
 img {
@@ -56,26 +58,43 @@ button {
     border: none;
     cursor: pointer;
 }
+/* max-width: 1128px+15px+15px */
+/* Common */
 .container {
-    width: 1166px;
+    width: 1158px;
     padding-right: 15px;
     padding-left: 15px;
-    margin left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
-/* Logo*/
-.menu-header .container{
+/* Header*/
+.header container {
     display: flex;
-    width: 1440px;
-    height: 72px;
-    
-
-   
+    align-items: center;
+}
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
 .page-nav {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-right: auto;
+    }
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: #2e2f42;
+    padding: 24px 0;
+     }
+
+.address-items {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-left: auto;
+    
     
 }
 .page-nav .web-studio-logo {
@@ -86,21 +105,10 @@ button {
     letter-spacing: 0.03em; 
     font-family: "Raleway", sans-serif;
     line-height: 1.17%;
-   
-    }
-    
-}
-.nav-list{
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    margin-left: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-right: 332px;
-    padding-left: 76px;
-    color: #2e2f42
-}
+    padding: 24px 0;
+    margin-right: 76px;
+   }
+
 .page-nav .studio {
     color: #2e2f42;
 
@@ -133,12 +141,7 @@ p{font-size: 12px;
 }
 
 
-.address-items{
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    margin-left: auto;
-}
+
 
 .page-nav .link:hover {
     color: #404bbf
@@ -153,14 +156,19 @@ p{font-size: 12px;
 .address-info {
     font-style: normal;
     display: flex;
+    margin-left: auto;
+    
 }
 
-.contacts-link {
+.contacts-list {
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: #434455;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    gap: 40px;
 }
 
 .contacts-link:hover {
@@ -172,65 +180,26 @@ p{font-size: 12px;
 }
 
 .contacts-link {
-    font-weight: 400;
+    display: block;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 150%;
+    letter-spacing: 0.02em;
     color: #434455;
 }
 
 /* Main content */
-.our-professionalism .container{
-width: 1166px;
-    
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    width: 1440;
-    height: 600;
-    
-    width: 1166px;
-    /* стандартна ширина контейнера */
-    height: 100%;
-                display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    /* кнопка внизу */
-                    align-items: center;
-                    /* по центру */
-                    height: 100%;
-                    /* займає всю висоту секції */
-                    padding-top: 100px;
-                    padding-bottom: 100px;
-}
+
+
 .our-professionalism {
+    padding: 188px 0;
     background-color: #2e2f42;
     width: 100%;
     margin: 0 auto;
     height: 600 px;
-
-}
-
-.button{
     display: flex;
-    flex-direction:row ;
-    align-items: center;
-    margin-left: auto;
-    margin: 0 auto;
-    margin-top: 356px;
-    margin-bottom: 188px;
-}
-    
-.competence-list{
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    margin: 120px; 156px;
-    margin-left: auto;
-}
 
-
+}
 
 .title {
     color: #fff;
@@ -239,11 +208,14 @@ width: 1166px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto 48px auto;
 }
 
 .button {
-    background-color: #4D5AE5
-    max-width: 220px;
+    background-color: #4D5AE5;
+    min-width: 169px;
+    height: 56px;
     display: block;
     margin: 0 auto;
     color: #fff;
@@ -256,7 +228,7 @@ width: 1166px;
 
 .button:hover,
 .button:focus {
-    background-color: #404BBF
+    background-color: #404BBF;
 }
 
 
@@ -283,6 +255,13 @@ width: 1166px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-size: 20;
+    margin: 0 auto;
+}
+
+.competence-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
 
 .competence-text {
@@ -295,14 +274,13 @@ width: 1166px;
 
 /* Our team */
  .our-team .container{
-   display: flex;
-   padding-top: 100px;
-   padding-bottom: 100px;
+  
  }
    
 
 .our-team {
     background-color: #F4F4FD
+    padding: 120px 0;
 }
 
 /.our-team .container{
