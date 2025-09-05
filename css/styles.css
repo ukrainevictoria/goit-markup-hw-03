@@ -253,7 +253,7 @@ p{font-size: 12px;
      clip: rect(0, 0, 0, 0);
      overflow: hidden;
  }
- 
+
 .competence-item{
     width: calc((100% - 72px) / 4);
 }
@@ -330,6 +330,8 @@ p{font-size: 12px;
 }
 .our-teams-item {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) /4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-teams-member {
