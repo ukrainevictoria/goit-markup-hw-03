@@ -41,9 +41,7 @@ ul {
 }
 a {
     text-decoration: none;
-    padding: 24px 0;
-    display: block;
-}
+    }
 
 img {
     display: block;
@@ -75,6 +73,10 @@ button {
 .page-header {
     border-bottom: 1px solid #e7e9fc;
 }
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+   }
 .page-nav {
     display: flex;
     align-items: center;
@@ -88,14 +90,14 @@ button {
     align-items: center;
     color: #2e2f42;
 }
-
+.link{
+color: #2e2f42;
+}
 .address-items {
     display: flex;
     gap: 32px;
     align-items: center;
     margin-left: auto;
-    
-    
 }
 .page-nav .web-studio-logo {
     color: #4d5ae5;
@@ -105,9 +107,7 @@ button {
     letter-spacing: 0.03em; 
     font-family: "Raleway", sans-serif;
     line-height: 1.17;
-    padding: 24px 0;
-    margin-right: 76px;
-   }
+}
 
 .page-nav .studio {
     color: #2e2f42;
@@ -125,9 +125,11 @@ button {
 
 .page-nav .link-mail{
     padding: 24px 40px 24px 332px;
+    color: #434455;
 }
 .page-nav .link-phone{
     padding: 24px 156px 24px 40px;
+    color: #434455;
 }
 
 h1 {
@@ -196,7 +198,6 @@ p{font-size: 12px;
     background-color: #2e2f42;
     width: 100%;
     margin: 0 auto;
-    height: 600 px;
     display: flex;
 
 }
@@ -255,8 +256,6 @@ p{font-size: 12px;
  }
 .competence-item{
     width: calc((100% - 3 * 24px) / 4);
-    text-align: center;
-    
 }
 
 .competence-title {
@@ -266,9 +265,8 @@ p{font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-size: 20;
-    margin: 0 auto;
     margin-bottom: 8px;
-    width: calc((100% - 3 * 24px) / 4);
+    
         
 }
 
@@ -410,10 +408,13 @@ p{font-size: 12px;
     letter-spacing: 0.03em;
     line-height: 1.17;
     font-family: "Raleway", sans-serif;
+}
+
+.web-studio-logo .footer-logo{
     display: inline-block;
     margin-bottom: 16px;
 }
-
+    
 .studio {
     color: #f4f4fd;
     
