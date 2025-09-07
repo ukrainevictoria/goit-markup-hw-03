@@ -253,7 +253,11 @@ p{font-size: 12px;
      clip: rect(0, 0, 0, 0);
      overflow: hidden;
  }
-
+.competence-item{
+    width: calc((100% - 3 * 24px) / 4);
+    text-align: center;
+    
+}
 
 .competence-title {
     color: #2e2f42;
@@ -264,7 +268,7 @@ p{font-size: 12px;
     font-size: 20;
     margin: 0 auto;
     margin-bottom: 8px;
-    
+    width: calc((100% - 3 * 24px) / 4);
         
 }
 
@@ -395,6 +399,7 @@ p{font-size: 12px;
 /* Footer */
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .web-studio-logo {
