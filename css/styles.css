@@ -92,7 +92,10 @@ button {
 }
 .link{
 color: #2e2f42;
+padding: 24px; 
+display: block;
 }
+
 .address-items {
     display: flex;
     gap: 32px;
